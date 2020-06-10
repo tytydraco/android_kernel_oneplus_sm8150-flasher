@@ -42,7 +42,7 @@ echo
 
 olddir=`pwd`
 cd $anykernel
-zip -r $zipname *
+zip -r $zipname * -x "README.md" -x "LICENSE"
 mv $zipname ..
 cd $oldir
 
