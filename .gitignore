@@ -1,0 +1,8 @@
+# Resulting zip
+*.zip
+
+# Kernel image
+Image.gz
+
+# Kernel DTB
+dtb
