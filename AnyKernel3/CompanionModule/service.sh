@@ -4,9 +4,6 @@
 # Kill brain service on OOS
 resetprop ctl.stop oneplus_brain_service
 
-# Memory tweaks
-sysctl -w vm.vfs_cache_pressure=80
-
 # Disable heap randomization
 sysctl -w kernel.randomize_va_space=0
 
