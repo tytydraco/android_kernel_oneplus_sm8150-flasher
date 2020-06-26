@@ -46,8 +46,14 @@ ui_print "Adding companion module...";
 rm -rf /data/adb/modules/CompanionModule;
 mkdir -p /data/adb/modules/CompanionModule;
 cp -rf CompanionModule/ /data/adb/modules/;
+
+ui_print "Adding VTS check bypass module...";
+rm -rf /data/adb/modules/vintf-bypass;
+mkdir -p /data/adb/modules/vintf-bypass;
+cp -rf vintf-bypass/ /data/adb/modules/;
+
 ui_print "Done.";
 ui_print "";
-ui_print "Note: Magisk is required to use the module.";
+ui_print "Note: Magisk is required to use the modules.";
 ui_print "If you do not have Magisk, flash it and reflash this kernel.";
 ui_print "";
