@@ -7,6 +7,9 @@ sysctl -w kernel.randomize_va_space=0
 # Process child forks before the parent
 sysctl -w kernel.sched_child_runs_first=1
 
+# Use kernel default dirty page max expiration time
+sysctl -w vm.dirty_expire_centisecs=3000
+
 # --- DELAYED CHANGES ---
 sleep 30
 
