@@ -10,8 +10,9 @@ sysctl -w kernel.sched_child_runs_first=1
 # Use kernel default dirty page max expiration time
 sysctl -w vm.dirty_expire_centisecs=3000
 
-# Use high capacity CPUs for top-app tasks
+# Adjust schedtune configuration
 echo 1 > /dev/stune/top-app/schedtune.crucial
+echo 1 > /dev/stune/top-app/schedtune.prefer_idle
 
 # --- DELAYED CHANGES ---
 sleep 30
