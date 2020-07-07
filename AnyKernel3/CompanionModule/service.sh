@@ -13,6 +13,7 @@ sysctl -w vm.dirty_expire_centisecs=3000
 # Adjust schedtune configuration
 echo 1 > /dev/stune/top-app/schedtune.crucial
 echo 1 > /dev/stune/top-app/schedtune.prefer_idle
+echo 20 > /dev/stune/top-app/schedtune.boost
 
 # --- DELAYED CHANGES ---
 sleep 30
