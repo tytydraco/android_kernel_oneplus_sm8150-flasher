@@ -3,7 +3,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # CONFIGURE: Use full pack to kernel root
-kernel="/home/tytydraco/Kernel/kernel_oneplus_guacamole"
+kernel="$HOME/Kernel/android_kernel_oneplus_sm8150"
 
 zimage="$kernel/out/arch/arm64/boot/Image.gz"
 dts="$kernel/out/arch/arm64/boot/dts"
