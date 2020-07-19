@@ -56,6 +56,10 @@ ui_print "Removing deprecated modules..."
 rm -rf /data/adb/modules/CompanionModule
 rm -rf /data/adb/modules/vintf-bypass
 
+ui_print "Disabling conflicting modules..."
+[[ -d "/data/adb/modules/xXx" ]] && echo "" > /data/adb/modules/xXx/disable
+[[ -d "/data/adb/modules/nfsinjector" ]] && echo "" > /data/adb/modules/nfsinjector/disable
+
 ui_print "Done.";
 ui_print "";
 ui_print "Note: Magisk is required to use the modules.";
