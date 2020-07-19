@@ -43,14 +43,18 @@ write_boot;
 ## end install
 
 ui_print "Adding companion module...";
-rm -rf /data/adb/modules/CompanionModule;
-mkdir -p /data/adb/modules/CompanionModule;
-cp -rf CompanionModule/ /data/adb/modules/;
+rm -rf /data/adb/modules/companion_module;
+mkdir -p /data/adb/modules/companion_module;
+cp -rf companion_module/ /data/adb/modules/;
 
 ui_print "Adding VTS check bypass module...";
-rm -rf /data/adb/modules/vintf-bypass;
-mkdir -p /data/adb/modules/vintf-bypass;
-cp -rf vintf-bypass/ /data/adb/modules/;
+rm -rf /data/adb/modules/vintf_bypass;
+mkdir -p /data/adb/modules/vintf_bypass;
+cp -rf vintf_bypass/ /data/adb/modules/;
+
+ui_print "Removing deprecated modules..."
+rm -rf /data/adb/modules/CompanionModule
+rm -rf /data/adb/modules/vintf-bypass
 
 ui_print "Done.";
 ui_print "";

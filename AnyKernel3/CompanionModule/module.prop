@@ -1,6 +1,0 @@
-id=CompanionModule
-name=Draco Kernel Companion Module
-version=v1
-versionCode=1
-author=Draco
-description=Additional userspace changes for Draco Kernel.
