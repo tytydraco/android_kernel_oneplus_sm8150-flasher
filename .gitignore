@@ -3,6 +3,7 @@
 
 # Kernel image
 Image.gz
+Image
 
 # Kernel DTB
 dtb
