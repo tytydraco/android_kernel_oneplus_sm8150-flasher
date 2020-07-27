@@ -2,7 +2,7 @@
 # Draco Kernel Companion Module
 
 # Disable dmesg
-sysctl -w kernel.printk_devkmsg=off
+echo off > /proc/sys/kernel/printk_devkmsg
 
 # Disable heap randomization
 sysctl -w kernel.randomize_va_space=0
